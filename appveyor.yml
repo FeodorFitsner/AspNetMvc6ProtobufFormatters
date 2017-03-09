@@ -1,6 +1,7 @@
-image: Visual Studio 2017 RC
+image: Visual Studio 2017
 init:
   - git config --global core.autocrlf true
+  - docker images
 install:
   - ECHO %APPVEYOR_BUILD_WORKER_IMAGE%
   - dotnet --version
